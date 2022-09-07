@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react"
 
 const Header = () => {
-  return (
-    <h1>Groceries List</h1>
-  )
+  
+  return <header >Groceries List</header>
 }
 
 export default Header

@@ -1,138 +1,132 @@
-
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700");
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-  height: 100%;
-  font-size: 22px;
+	height: 100%;
+	font-size: 22px;
 }
 
 body {
-  min-height: 100vh;
-  font-family: "IBM Plex Sans", "Roboto", "Helvetica Neue", "Arial", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	min-height: 100vh;
+	font-family: "IBM Plex Sans", "Roboto", "Helvetica Neue", "Arial",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  border: 1px solid #f4f6f8;
-  margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	border: 1px solid #f4f6f8;
+	margin: auto;
 }
 
 header {
-  width: 100%;
-  height: 60px;
-  padding: 0 0.25em;
-  background-color: #fafafa;
-  color: #454f5b;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
-  box-shadow: 0 0 20px 0 rgba(51, 50, 50, 0.2);
-  position: sticky;
-  padding-left: 10rem;
+	width: 100%;
+	height: 60px;
+	padding: 0 0.25em;
+	background-color: #fafafa;
+	color: #454f5b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 600;
+	box-shadow: 0 0 20px 0 rgba(51, 50, 50, 0.2);
+	position: sticky;
+	padding-left: 10rem;
 }
 
-
 main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  overflow-y: auto;
-  background-color: #f4f6f8;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  font-weight: 550;
-  color: #5e6876;
-  
+	width: 100%;
+	/* display: flex; */
+	/* flex-direction: column; */
+	flex-grow: 1;
+	justify-content: flex-start;
+	overflow-y: auto;
+	background-color: #f4f6f8;
+	/* display: grid;
+ justify-content: center; */
+
+	font-weight: 550;
+	color: #5e6876;
 }
 
 footer {
-  width: 100%;
-  padding: 0.25em;
-  background-color: #fafafa;
-  color: #536071;
-  display: grid;
-  place-content: center;
-  font-size: 15px;
+	width: 100%;
+	padding: 0.25em;
+	background-color: #fafafa;
+	color: #536071;
+	display: grid;
+	place-content: center;
+	font-size: 15px;
+	height: 2rem;
 }
 ul {
-  width: 100%;
-  list-style: none;
+	width: 100%;
+	list-style: none;
 }
 
 ul li::before {
-  content: "\200B";
+	content: "\200B";
 }
 li.item {
-  box-shadow: 0 5px 8px 2px rgba(152, 150, 150, 0.14);
-  margin: 15px;
+	box-shadow: 0 5px 8px 2px rgba(152, 150, 150, 0.14);
+	margin: 15px;
 }
 
 .item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0.75rem 1.25rem;
-  margin: 0.25rem 0;
-  background-color: #fafafa;
-  border-radius: 0.5rem;
-  width: 600px;
-  
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0.75rem 1.25rem;
+	margin: 0.25rem 0;
+	background-color: #fafafa;
+	border-radius: 0.5rem;
+	width: 380px;
 }
-
-
-
 
 .item input[type="checkbox"] {
-  text-align: center;
-  width: 2.5rem;
-  width: 25px;
-  min-width: 25px;
-  height: 2.5rem;
-  height: 25px;
-  min-height: 20px;
-  cursor: pointer;
-  margin-right: 0.5rem;
-  filter: hue-rotate(30deg) saturate(40%) brightness(100%);
+	text-align: center;
+	width: 2.5rem;
+	width: 25px;
+	min-width: 25px;
+	height: 2.5rem;
+	height: 25px;
+	min-height: 20px;
+	cursor: pointer;
+	margin-right: 0.5rem;
+	filter: hue-rotate(30deg) saturate(40%) brightness(100%);
 }
-
 
 .item input[type="checkbox"]:focus + label {
-  color: rgb(89, 45, 132);
+	color: rgb(89, 45, 132);
 }
 
-
 .item > label {
-  font-size: 0.75rem;
-  flex-grow: 1;
+	font-size: 0.75rem;
+	flex-grow: 1;
 }
 
 .item svg {
-  width: 20px;
-  min-width: 20px;
-  height: 20px;
-  font-size: 1rem;
-  color: #e1b684;
-  cursor: pointer;
+	width: 20px;
+	min-width: 20px;
+	height: 20px;
+	font-size: 1rem;
+	color: #e1b684;
+	cursor: pointer;
 }
 
 .item svg:focus,
 .item svg:hover {
-  color: #a37d53;
-  outline: none;
+	color: #a37d53;
+	outline: none;
 }

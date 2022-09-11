@@ -47,14 +47,16 @@ header {
 
 main {
 	width: 100%;
-	/* display: flex; */
-	/* flex-direction: column; */
+	display: flex;
+
 	flex-grow: 1;
-	justify-content: flex-start;
+
 	overflow-y: auto;
 	background-color: #f4f6f8;
-	/* display: grid;
- justify-content: center; */
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 
 	font-weight: 550;
 	color: #5e6876;
@@ -129,4 +131,82 @@ li.item {
 .item svg:hover {
 	color: #a37d53;
 	outline: none;
+}
+
+.addForm {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 2rem 0 0;
+	padding: 0 0.5rem 0.25rem;
+	border-bottom: 1px solid #eee;
+}
+
+.addForm label {
+	position: absolute;
+	left: -99999px;
+}
+
+.addForm input[type="text"] {
+    flex-grow: 1;
+	min-height: 5px;
+	font-size: 20px;
+	color: #536071;
+	padding: 0.25rem;
+	border-radius: 0.25rem;
+	margin-right: 0.25rem;
+	padding-left: 1rem;
+	outline: none;
+	border: none;
+	height: 2rem;
+	width: 15rem;
+}
+
+
+button {
+	height: 2rem;
+	min-width: 2rem;
+	border-radius: 0.25rem;
+	padding: 0.5rem;
+	font-size: 0.6rem;
+	background-color: rgb(156, 201, 241);
+	color: White;
+	cursor: pointer;
+	border: none;
+	margin-left: 0.2rem;
+}
+
+button:focus,
+button:hover {
+	background-color: rgb(111, 137, 151);
+	outline: none;
+}
+
+/* .searchForm {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	margin: 0.25rem 0 0;
+	padding: 0 0.5rem 0.25rem;
+	border-bottom: 1px solid rgb(214, 65, 65);
+	line-height: 50px;
+}
+
+.searchForm label {
+	position: absolute;
+	left: -99999px;
+}
+
+.searchForm input[type="text"] {
+	flex-grow: 1;
+	max-width: 100%;
+	min-height: 48px;
+	font-size: 1rem;
+	padding: 0.25rem;
+	border-radius: 1rem;
+	outline: none;
+} */
+
+.child {
+	flex: 0 1;
+	margin: 5px;
 }
